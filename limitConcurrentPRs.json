@@ -1,0 +1,5 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Limits Renovate to open maximum 3 PRs on projects",
+    "prConcurrentLimit": 3
+}

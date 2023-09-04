@@ -1,0 +1,20 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "description": "Makes Node versions used in Dockefiles up-to-date with the latest LTS only.",
+  "packageRules": [
+    {
+      "matchManagers": ["dockerfile"],
+      "matchPackageNames": ["node"],
+      "enabled": "false"
+    }
+  ],
+  "regexManagers": [
+    {
+      "matchStrings": [
+        "(?<depName>node):(?<currentValue>.*?)(\n|-| )"
+      ],
+      "fileMatch": ["^Dockerfile$"],
+      "datasourceTemplate": "node-version"
+    }
+  ]
+}

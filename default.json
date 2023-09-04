@@ -1,0 +1,11 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Default Renovate rules for Node projects",
+    "extends": [
+        "config:base",
+        "github>ABWassim/vtah-renovate-config:dockerNodeLTS",
+        "github>ABWassim/vtah-renovate-config:groupNodeDeps",
+        "github>ABWassim/vtah-renovate-config:limitConcurrentPRs",
+        "github>ABWassim/vtah-renovate-config:nonWorkingHours"
+    ]
+}

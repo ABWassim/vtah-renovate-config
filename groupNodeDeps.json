@@ -1,0 +1,12 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Group Node updates together",
+    "packageRules": [
+        {
+            "commitMessageTopic": "Node.js",
+            "matchDatasources": ["docker"],
+            "matchDepNames": ["node"],
+            "matchPackagePatterns": ["/node$"]
+        }    
+    ]
+}
